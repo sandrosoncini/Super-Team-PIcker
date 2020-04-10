@@ -1,0 +1,32 @@
+
+
+<%- include('../partials/header.ejs') %>
+<div class="container">
+    <h1>Cohorts</h1>
+<% for(let cohort of cohorts) { %> 
+<div class="card w-75">
+    <div class="card-body">
+        <div class="row featurette" >
+            <svg class="bd-placeholder-img rounded-circle" width="70" height="70" src="/images/art1.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#777"></rect>
+                <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                
+            </svg>
+            <h5 class="card-title"><%= cohort.name %> </h5>
+        </div>
+      
+        <p class="card-text"><%= cohort.members %> </p>
+        <a href="/cohorts/<%= cohort.id %>" class="btn btn-primary">Show Cohort</a>
+    </div>
+</div>
+<br>
+
+<% } %>
+</div>
+
+<%- include('../partials/footer.ejs') %>
+
+
+
+  

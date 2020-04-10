@@ -1,0 +1,19 @@
+<%- include('../partials/header.ejs') %>
+<div class="container">
+    <form action="/cohorts" method="POST">
+        <div class="form-group">
+            <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Logo Url</label>
+            <input type="url" class="form-control form-control-lg" id="formGroupExampleInput" name= "logoUrl" placeholder="e.g. https://www.example.com/some.jpg">
+        </div>
+        <div class="form-group">
+            <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Name</label>
+            <input type="text" class="form-control form-control-lg" id="formGroupExampleInput2" name="name" placeholder="Flying Funks">
+        </div>
+        <div class="form-group">
+            <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Members</label>
+            <textarea type="text" class="form-control" id="exampleFormControlTextarea1" name="members" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg" value="submit">Submit</button>
+    </form>
+</div>
+<%- include('../partials/footer.ejs') %>
