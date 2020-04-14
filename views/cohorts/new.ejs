@@ -1,5 +1,6 @@
 <%- include('../partials/header.ejs') %>
 <div class="container">
+    <h1>New Cohort</h1>
     <form action="/cohorts" method="POST">
         <div class="form-group">
             <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Logo Url</label>
@@ -11,7 +12,7 @@
         </div>
         <div class="form-group">
             <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Members</label>
-            <textarea type="text" class="form-control" id="exampleFormControlTextarea1" name="members" rows="3"></textarea>
+            <textarea type="text" class="form-control" id="exampleFormControlTextarea1" name="members" placeholder="Jon Snow, Queen, King, Ace, Jacks" rows="2"></textarea>
         </div>
         <button type="submit" class="btn btn-primary btn-lg" value="submit">Submit</button>
     </form>
